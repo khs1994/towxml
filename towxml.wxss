@@ -1,0 +1,59 @@
+/**基础风格样式**/
+@import './style/main.wxss';
+
+/**主题配色（浅色样式）**/
+@import './style/theme/light.wxss';
+
+/**主题配色（深色样式）**/
+@import './style/theme/dark.wxss';
+
+.h2w-light .h2w__a {
+  color: #36a1f0;
+  border-bottom-color: #36a1f0;
+}
+
+.h2w-dark .h2w__a {
+  color: #36a1f0;
+  border-bottom-color: #36a1f0;
+}
+
+.h2w__a {
+  border-bottom-color: #36a1f0;
+}
+
+.h2w__ad {
+  margin-top: 3vh;
+  margin-left: -11rpx;
+  margin-bottom: 3vh;
+}
+
+.h2w__h1 {
+  color: #36a1f0;
+}
+
+.h2w-light .h2w__a {
+  color: #36a1f0;
+}
+
+.h2w__a {
+  border-bottom-style: none;
+  /* font-size: 40rpx; */
+}
+
+.h2w__pre .h2w__code {
+  font-size: 125%;
+  width: 100%;
+}
+
+.h2w__code {
+ font-size: 99%;
+}
+
+.h2w {
+ font-size: 34rpx;
+}
+
+.h2w__img {
+  width: 100%;
+  height: 100%;
+}
