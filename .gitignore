@@ -1,5 +1,7 @@
-node_modules
-.vscode
+/demo/towxml/
+/node_modules/
+/.vscode/
 .DS_Store
+project.config.json
 dist
 package-lock.json

@@ -1,13 +1,12 @@
 {
   "name": "towxml",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "HTML、Markdown转WXML(WeiXin Markup Language)渲染库",
   "main": "index.js",
   "miniprogram": "dist/towxml",
   "scripts": {
     "build": "node build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npm i -g fs-extra ; npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -28,8 +27,5 @@
   "homepage": "https://github.com/sbfkcel/towxml#readme",
   "devDependencies": {
     "fs-extra": "^8.1.0"
-  },
-  "files": [
-    "dist"
-  ]
+  }
 }

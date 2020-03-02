@@ -33,7 +33,9 @@ module.exports = {
         'php',
         // 'scss',
         'shell',
-
+        // 'c',
+        // 'c-like',
+        // 'rust',
         // 'coffeescript',
         // 'dns',
         // 'dos',
@@ -49,8 +51,7 @@ module.exports = {
         'ruby',
         'sql',
         // 'swift',
-        'typescript',
-        'yaml',
+        'typescript'
     ],
 
     // wxml原生标签，该系列标签将不会被转换
@@ -71,7 +72,7 @@ module.exports = {
         'checkbox',
         'radio-group',
         'radio',
-        
+
         // 可以解析的标签（html或markdown中会很少使用）
         // 'canvas',
         // 'map',
@@ -96,21 +97,19 @@ module.exports = {
         'table',                    // 表格支持
         'todogroup',                // todo支持
         'yuml',                     // yuml图表支持
+        'img'                       // 图片解析组件
     ],
 
     // 保留原本的元素属性（建议不要变动）
     attrs:[
         'class',
-        'width',
-        'height',
         'data',
         'id',
         'style'
     ],
 
-    // 事件绑定方式（catch或catch），catch 会阻止事件向上冒泡。更多请参考：https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html
+    // 事件绑定方式（catch或bind），catch 会阻止事件向上冒泡。更多请参考：https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html
     bindType:'catch',
-    // bindType:'bind',
 
     // 需要激活的事件
     events:[
@@ -120,5 +119,11 @@ module.exports = {
         // 'touchend',
         'tap',                      // 用于元素的点击事件
         'change',                   // 用于todoList的change事件
-    ]
+    ],
+
+    // 图片倍数
+    dpr:1,
+
+    // 代码块显示行号
+    showLineNumber:true
 }
