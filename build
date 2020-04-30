@@ -172,10 +172,10 @@ class Build{
         };
 
         // 创建自定义组件配置
-        let obj = {component:true,usingComponents:{decode:`/towxml/decode`}};
+        let obj = {component:true,usingComponents:{decode:`./decode`}};
 
         config.components.forEach(item => {
-            obj.usingComponents[item] = `/towxml/${item}/${item}`
+            obj.usingComponents[item] = `./${item}/${item}`
         });
         fs.writeFileSync(path.join(_ts.outDir,'decode.json'),JSON.stringify(obj,null,2));
 
